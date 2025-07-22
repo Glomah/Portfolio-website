@@ -5,10 +5,6 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h3{
-
-}
-
 
 .bio-section{
     background-color: none;
@@ -24,10 +20,13 @@ h3{
 .biograph{
     padding: 15px;
     max-width: 70%;
-    overflow-wrap:anywhere;
+    overflow-wrap: anywhere;
     text-align: justify;
+    flex-wrap: wrap;
 
 }
+
+
 
 
 .dream-statement{
@@ -48,6 +47,15 @@ h3{
     display: flex;
 }
 
+.biograph > h2{ 
+    color: rgb(183, 84, 4);
+    display: inline-flex;
+
+}
+
+.biograph > h1{
+    display: inline;
+}
 
 
 .nav-bar-section{
@@ -73,11 +81,15 @@ h3{
 
 .nav-bar{
     align-content: center;
-    margin-left: 64%;
+    text-align: justify;
+    margin-left: 62%;
+    margin-right: 7px;
     display: inline;
     padding: 2px;
     font-weight: bold;
     color: white;
+    flex-wrap: wrap;
+    
 
 }
 
@@ -136,7 +148,6 @@ a{
     margin-right: 3%;
     word-spacing: normal;
     padding: 15px;
-    text-indent: 40px;
     background-color: ;
     flex-direction: row;
     max-width: 68.5%;
@@ -151,10 +162,6 @@ a{
 
 
 .aside-div{
-    background-color: ;
-    margin-right: ;
-    margin-bottom: ;
-    border-left: ;
     border-radius: 10px;
     max-width: 60%;
     margin: px;
