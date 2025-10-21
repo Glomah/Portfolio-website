@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ./src/style.css -o ./public/output.css",
+    "watch": "npx @tailwindcss/cli -i ./src/style.css -o ./public/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Glomah/Portfolio-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Glomah/Portfolio-website/issues"
+  },
+  "homepage": "https://github.com/Glomah/Portfolio-website#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.15",
+    "tailwindcss": "^4.1.15"
+  }
+}

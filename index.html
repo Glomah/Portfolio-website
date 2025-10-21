@@ -4,101 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyPortfolio</title>
-    <link rel="icon" type="image/x-icon" href="/photos/favi_pic.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./photos/favi_pic.png">
+    <link rel="stylesheet" href="./public/output.css">
+    <!-- Fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <section class="section-main">
+<body class="md:mt-4 bg-grey">
+        <div class="shadow-md justify-between sm:w-full items-center bg-blue-700 text-white p-3 flex">
+            <div class="nav-bar-name">
+                <label class="font-bold"> George G. Washington</label>
+            </div>
+            <div class="hidden md:flex">
+                <ul class="flex gap-4 uppercase font-bold">
+                    <li><a class="active" href="#about">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
+            </div>
+            <div class="md:hidden" id="showMenu">
+                <div class="hidden" id="menuItems">
+                    <ul class="flex gap-4 uppercase font-bold">
+                        <li><a class="active" href="#about">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contacts</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </div>
+        </div>
 
-        <section class="nav-bar-section">
-                <div class="nav-bar-name">
-                    <p>George G. Washington</p>
+        <div class="grid md:grid-cols-3 sm:grid-cols-1 p-4 m-2 justify-between items-center mt-5 shadow-md">
+            <div class="col-span-2">
+                <div class="text-blue-700  text-2xl font-bold mb-1">
+                    <h1 >George G. Washington</h1>
                 </div>
-                <div class="nav-bar">
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#contact">Contacts</a>
+                <div class="text-amber-600 text-xl font-bold  mb-2">
+                    <h2>Programmer/Developer</h2>
                 </div>
-        </section>
-
-        <div class="bio-section">
-            <div class="biograph">
-                <h1>George G. Washington</h1>
-                <h2>Programmer/Developer</h2><br>
-                <div class="mission">
-                    <p><b>MISSION: </b>&nbsp;&nbsp;To learn all the languages and tools that will enable me to build any system or software. <br><br>
-                        <b>VISION: </b>&nbsp;&nbsp;Build systems that meet and solve churches organizations tracking and record systems; <br>
-                        Build applications and programming systems that meet public health concerns. <br>
-                    </p>
-                  
-                    <P class="dream-statement"><mark>IT IS ONLY A DREAM WHEN IT KEEPS YOU RESTLESS UNTIL IT'S DONE.</mark> </P>
-                    <button>view my work</button>
+                <div class="mivi_container">
+                    <div class="flex gap-3">
+                        <span class="font-bold  mb-3">MISSION:</span> 
+                        <div class="mivi_statement">
+                            To learn all the languages and tools that will enable me to build any system or software. <br><br>
+                        </div>
+                    </div>
+                    <div class="flex gap-3">
+                        <span class="font-bold  mb-2">VISION:</span> 
+                        <div class="mivi_statement">
+                            Build systems that meet and solve churches organizations tracking and record systems; <br>
+                            Build applications and programming systems that meet public health concerns. <br>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <mark>IT IS ONLY A DREAM WHEN IT KEEPS YOU RESTLESS UNTIL IT'S DONE.</mark> 
+                    </div>
+                    <div class="mivi_button">
+                        <button class="bg-amber-600 text-white p-2 font-bold rounded">view my work</button>
+                    </div>
                 </div>
+            </div>
+            <div class="bg-blue-200 w-40 h-full rounded-t-full ">
+                <img class="w-40 h-40 rounded-full" src="/photos/prof_pic.jpg" alt="GgWASH_Prof_pic">
+            </div>
                 
                 <!--<button>
                     <a href="#"><b>Projects</b></a>
-                </button>-->
-            </div>
-            <div class="bio-img">
-                 <img src="/photos/prof_pic.jpg" alt="GgWASH_Prof_pic">
-            </div>
-                
+                </button>-->      
         </div>
+            <!--First Session-->
 
-            <section id="about">
-                <h3>About me</h3>
-                <div class="about-me-div">
-                    <div class="about-me-details">
-                         <h4>Background</h4>
-                        <p>I am a Liberian from the southeasthen region of 
-                            dskhf ioshfehaw[e fgoia whe goawhegbiabgi oawbogawogo
-                            od ih gf owh gon oangrjb ks bdfibs idbfisbdifbkdbkd
-                            dk sbdbsb dfoi b so bdo ib fs dkfskd jbfkbse kfbowsbofoiobs
-                            dfk s bd  fso dsb bdfb oiwe rbiow beiwedbofehofhowehfnwn efoiiheonfonweoge ehfowheofkjeoioeinowiheonoehof
-                            
-                        </p> 
-                        <p> <mark>This is my uniqueness</mark> </p>
+        <section id="about" class=" bg-gray-100">
+            <h3 class="text-center text-2xl font-bold uppercase text-blue-800 p-10">About me</h3>
+            <div class="grid md:grid-cols-3 sm:grid-cols-1 gap-2 ">
+                <div class="col-span-2 bg-amber-300 m-2 p-3">
+                    <h4 class="font-bold text-xl">Background</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi accusamus itaque modi iusto aliquid necessitatibus sapiente! Doloremque temporibus ipsa culpa harum, laudantium, optio expedita nemo autem eos ex reprehenderit non.</p>
                         
-                    </div>
-
-                    <div class="aside-div">
-                        <div class="side">
-                            <aside class="aside">
-                                <h4>CORE SKILLS</h4>   
-                                <section class="aside-sec">Good listener</section>
-                                <section class="aside-sec">Excellent Observer</section>
-                                <section class="aside-sec">Excellent Skills</section>
-                                <section class="aside-sec">Teachable</section>
-                                <section class="aside-sec">Teachable</section>
-                                <section class="aside-sec">Teachable</section>
-                                <section class="aside-sec">Teachable</section>  
-                            </aside>
-                        </div>
-                        
-                    </div>
                 </div>
-            </section>
+                <div class="">
+                    <div class="side">
+                        <aside class="m-2 p-3">
+                            <h4 class="text-xl font-bold mb-1">CORE SKILLS</h4>
+                            <div class="bg-gray-100 border-l-4 border-amber-600 md:w-1/2 sm:w-full px-2  shadow-md text-gray-950 mb-2">Good Listner</div>
+                            <div class="bg-gray-100 border-l-4 border-amber-600 md:w-1/2 sm:w-full px-2  shadow-md text-gray-950 mb-2">Execelllent Observer</div>
+                            <div class="bg-gray-100 border-l-4 border-amber-600 md:w-1/2 sm:w-full px-2  shadow-md text-gray-950 mb-2">Teacheable</div>
+                            <div class="bg-gray-100 border-l-4 border-amber-600 md:w-1/2 sm:w-full px-2  shadow-md text-gray-950 mb-2">Me</div>     
+                        </aside>
+                    </div> 
+                </div>
+            </div>
+        </section>
 
-            <section id="projects">
-                <h3 class="project-div-card-head">Projects</h3>
+            <section id="">
+                <h1 class="text-center text-2xl mt-10 font-bold text-blue-800">Projects</h1>
                 
-                <div class="project-div">
-                    <div class="project-div-card-container-one">
-                        <div class="div-card-container-first-sec">
-                            <div class="div-card-head">
-                                <h4>Malaria control</h4>
-                                <p>National Supervisor</p>
-
-                            </div>
-                            <div>
+                <div class="grid grid-cols-3 gap-4 m-4">
+                    <div class="bg-blue-300 shadow-md">
+                        <div class="relative">
+                            <div class="">
                                 <figure class="project-div-card-pic">
-                                    <img src="/photos/favi_pic.png" alt="Distribution-site">
-                                    <figcaption>Distribution Site</figcaption>
+                                    <img class="w-full h-75 " src="/photos/favi_pic.png" alt="Distribution-site">
                                 </figure>
                             </div>
+                            <div class="absolute  mt-5 top-60 left-2 text-gray-300 font-bold">
+                                Distribution Site
+                            </div>
+                            <div class=" p-5">
+                                <h4>Malaria control</h4>
+                                <p>National Supervisor</p>
+                            </div>
                         </div>
-                        <div class="div-card-container-second-sec">
+                        <div class=" p-5">
                             <div class="project-div-card-details">
                                 <h4>Malaria Control</h4>
                                 <p>This program was designed to track the distribution of insectisize nets in all 15 counties.</p>
@@ -184,16 +205,21 @@
 
             <section id="skills">
                 <h3>Technical Skills</h3>
-                <div class="tech-skills-div-sec">
+                <div class="grid grid-cols-3 m-3">
                 
-                    <div class="tech-skills-div-one">
+                    <div class="bg-amber-400 w-[75%]">
                         <h4>Languages</h4>
                         <div class="fa-div-main">
                             <div class="p-1">
-                                <div class="fa-div-content">
-                                    <i class="fas fa-html">html</i>
+                                <div class="flex justify-between">
+                                    <i class="fa-brands fa-html5"></i>
+                                    <span class="mr-18">80%</span>
                                 </div>                           
-                                <progress id="myprogress" value="10" max="100"></progress>
+                                <progress
+                                class="w-56 h-2 [&::-webkit-progress-bar]:rounded-lg [&::-webkit-progress-value]:rounded-lg [&::-webkit-progress-bar]:bg-slate-300 [&::-webkit-progress-value]:bg-blue-600 [&::-moz-progress-bar]:bg-blue-600"
+                                value="80"
+                                max="100"
+                                ></progress>
                             </div>
                             <div class="p-1">
                                 <div class="fa-div-content">
@@ -205,13 +231,13 @@
                                 <div class="fa-div-content">
                                     <i class="fas fa-javascript">Javascript</i>
                                 </div>
-                                <progress  value="65" max="100">html</progress>
+                                <progress  value="65" max="100"></progress>
                             </div>
                             <div class="p-1">
                                 <div class="fa-div-content">
                                     <i class="fas fa-python">Python</i>
                                 </div>
-                                <progress  value="50" max="100">html</progress>
+                                <progress  value="50" max="100"></progress>
                             </div> 
                         </div>    
                     </div>
@@ -329,11 +355,9 @@
                 </div>
 
 
-            </section>
+            </section> 
 
-    </section>    
-
-    <script src="script.js"></script>
+    <script src="./src/script.js"></script>
 </body>
 </html> 
  
