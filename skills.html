@@ -34,35 +34,50 @@
         <a href="skills.html" class="block hover:text-amber-400" target="_self">Skills</a>
     </div>
 
-    <!-- Hero Section -->
-    <section class="grid md:grid-cols-3 gap-6 p-6 items-center shadow-md bg-white m-4 rounded-lg">
-        <div class="md:col-span-2">
-            <h1 class="text-blue-700 text-3xl font-bold mb-2">George G. Washington</h1>
-            <h2 class="text-amber-600 text-xl font-semibold mb-4">Programmer/Developer</h2>
-            <div class="space-y-4">
-                <div class="flex gap-2 flex-wrap">
-                    <span class="font-bold">MISSION:</span>
-                    <p>To learn all the languages and tools that will enable me to build any system or software.</p>
+<!-- Skills Section -->
+    <section id="skills" class="p-6 m-4 rounded-lg shadow-md bg-white">
+        <h3 class="text-2xl font-bold text-center mb-4 text-blue-800">Technical Skills</h3>
+        <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-amber-400 p-4 rounded shadow-md">
+                <h4 class="font-bold mb-2">Languages</h4>
+                <div class="space-y-2">
+                    <div class="flex justify-between"><span>HTML</span><span>80%</span></div>
+                    <progress class=" w-full h-2 rounded bg-gray-300 [&::-webkit-progress-value]:bg-blue-600" value="80" max="100"></progress>
+                    <div class="flex justify-between"><span>CSS</span><span>70%</span></div>
+                    <progress class="w-full h-2 rounded bg-gray-300 [&::-webkit-progress-value]:bg-blue-600" value="5" max="100"></progress>
+                    <div class="flex justify-between"><span>JavaScript</span><span>2%</span></div>
+                    <progress class="w-full h-2 rounded bg-gray-300 [&::-webkit-progress-value]:bg-blue-600" value="5" max="100"></progress>
+                    <div class="flex justify-between"><span>Python</span><span>40%</span></div>
+                    <progress class="w-full h-2 rounded bg-gray-300 [&::-webkit-progress-value]:bg-blue-600" value="40" max="100"></progress>
                 </div>
-                <div class="flex gap-2 flex-wrap">
-                    <span class="font-bold">VISION:</span>
-                    <p>Build systems that meet and solve church organizations' tracking and record systems.<br>
-                    Build applications that address public health concerns.</p>
+            </div>
+            <!-- Frameworks -->
+            <div class="bg-amber-200 p-4 rounded shadow-md">
+                <h4 class="font-bold mb-2">Frameworks</h4>
+                <div class="space-y-2">
+                    <div class="flex justify-between"><span>React</span><span>1%</span></div>
+                    <progress class="w-full h-2 rounded bg-gray-300 [&::-webkit-progress-value]:bg-blue-600" value="1" max="100"></progress>
+                    <div class="flex justify-between"><span>Vue</span><span>1%</span></div>
+                    <progress class="w-full h-2 rounded bg-gray-300 [&::-webkit-progress-value]:bg-blue-600" value="1" max="100"></progress>
+                    <div class="flex justify-between"><span>Bootstrap</span><span>1%</span></div>
+                    <progress class="w-full h-2 rounded bg-gray-300 [&::-webkit-progress-value]:bg-blue-600" value="1" max="100"></progress>
                 </div>
-                <p class="text-center bg-gray-200 p-2 rounded font-bold">IT IS ONLY A DREAM WHEN IT KEEPS YOU RESTLESS UNTIL IT'S DONE.</p>
-                <button class="bg-amber-600 text-white font-bold p-2 rounded hover:bg-amber-500 transition">View My Work</button>
+            </div>
+            <!-- Tools -->
+            <div class="bg-amber-100 p-4 rounded shadow-md">
+                <h4 class="font-bold mb-2">Tools</h4>
+                <div class="space-y-2">
+                    <div class="flex justify-between"><span>HTML</span><span>50%</span></div>
+                    <progress class="w-full h-2 rounded bg-gray-300 [&::-webkit-progress-value]:bg-blue-600" value="50" max="100"></progress>
+                    <div class="flex justify-between"><span>Git</span><span>45%</span></div>
+                    <progress class="w-full h-2 rounded bg-gray-300 [&::-webkit-progress-value]:bg-blue-600" value="10" max="100"></progress>
+                    <div class="flex justify-between"><span>Figma</span><span>10%</span></div>
+                    <progress class="w-full h-2 rounded bg-gray-300 [&::-webkit-progress-value]:bg-blue-600" value="10" max="100"></progress>
+                </div>
             </div>
         </div>
-        <div class="flex justify-center md:justify-end">
-            <img class="w-40 h-40 rounded-full shadow-lg" src="/photos/prof_pic.jpg" alt="Profile Picture">
-        </div>
-    </section>
 
-   
-
-    
-
-    <!-- Contact Section -->
+        <!-- Contact Section -->
     <section id="contact" class="p-6 m-4 rounded-lg shadow-md bg-white">
         <h3 class="text-2xl font-bold text-center mb-4 text-blue-800">Get In Touch</h3>
         <div class="grid md:grid-cols-2 gap-6">
@@ -85,7 +100,3 @@
             </div>
         </div>
     </section>
-
-    <script src="./src/script.js"></script>
-</body>
-</html>

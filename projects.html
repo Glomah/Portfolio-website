@@ -1,0 +1,129 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel="icon" type="image/x-icon" href="./photos/favi_pic.png">
+    <link rel="stylesheet" href="./public/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-700 text-white shadow-md p-4 flex justify-between items-center">
+        <div class="font-bold text-lg">George G. Washington</div>
+        <ul class="hidden md:flex gap-6 uppercase font-bold">
+            <li><a class="hover:text-amber-400" href="index.html" target="_self">Home</a></li>
+            <li><a class="hover:text-amber-400" href="about.html" target="_self">About</a></li>
+            <li><a class="hover:text-amber-400" href="contacts.html" target="_self">Contacts</a></li>
+            <li><a class="hover:text-amber-400" href="projects.html" target="_self">Projects</a></li>
+            <li><a class="hover:text-amber-400" href="skills.html" target="_self">Skills</a></li>
+        </ul>
+        <div class="md:hidden">
+            <i class="fa-solid fa-bars text-2xl cursor-pointer" id="menuToggle"></i>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden bg-blue-700 text-white p-4 space-y-2 md:hidden">
+        <a href="index.html" class="block hover:text-amber-400" target="_self">Home</a>
+        <a href="about.html" class="block hover:text-amber-400" target="_self">About</a>
+        <a href="contact.html" class="block hover:text-amber-400" target="_self">Contacts</a>
+        <a href="projects.html" class="block hover:text-amber-400" target="_self">Projects</a>
+        <a href="skills.html" class="block hover:text-amber-400" target="_self">Skills</a>
+    </div>
+ 
+ <!-- Projects Section -->
+    <section id="projects" class="p-6 m-4 rounded-lg shadow-md bg-white">
+        <h3 class="text-center text-2xl font-bold text-blue-800 mb-6">Projects</h3>
+        <div class="grid sm:grid-cols-1 md:grid-cols-4 grid-rows-1 gap-6">
+            <!-- Project Card -->
+            <div class="bg-blue-300 rounded-lg shadow-md overflow-hidden hover:scale-105 transition transform">
+                <img class="w-full h-48 object-cover" src="/photos/covid.jpg" alt="Project">
+                <div class="p-4">
+                    <h4 class="font-bold text-lg">Research Assistant</h4>
+                    <p>Serve as a research assistant at <abbr class="font-bold" title="Partners In Health">PIH</abbr></p>
+                    <p>The programme was designed to develop a culturally-resonant screening tools for mental distress</p>
+                    <p class="mt-2"></p>
+                    <div class="flex gap-2 mt-2">
+                        <span class="bg-white text-blue-700 font-bold px-2 rounded">2017</span>
+                    </div>
+                    <div class="flex gap-2 mt-3">
+                        <button class="bg-amber-600 text-white px-3 py-1 rounded hover:bg-amber-500 transition font-bold"><a href="#" target="_blank">PIH</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-blue-300 rounded-lg shadow-md overflow-hidden hover:scale-105 transition transform">
+                <img class="w-full h-48 object-cover" src="/photos/dna.jpeg" alt="Project">
+                <div class="p-4">
+                    <h4 class="font-bold text-lg">Internship</h4>
+                    <p>Serve as an intern at <abbr class="font-bold" title="National Public Health Institute of Liberia">NPHIL</abbr></p>
+                    <p class="mt-2">Research on Ebola survivors and DNA astraction</p>
+                    <div class="flex gap-2 mt-2">
+                        <span class="bg-white text-blue-700 font-bold px-2 rounded">2018</span>
+                    </div>
+                    <div class="flex gap-2 mt-3">
+                        <button class="bg-amber-600 text-white px-3 py-1 rounded hover:bg-amber-500 transition font-bold"><a href="#" target="_blank">NPHIL</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-blue-300 rounded-lg shadow-md overflow-hidden hover:scale-105 transition transform">
+                <img class="w-full h-48 object-cover" src="/photos/malaria.jpg" alt="Project">
+                <div class="p-4">
+                    <h4 class="font-bold text-lg">Liberia Malaria Control Programme (LMCP)</h4>
+                    <p>National Supervisor</p>
+                    <p class="mt-2">This program was designed to track the distribution of insecticide nets in all 15 counties.</p>
+                    <div class="flex gap-2 mt-2">
+                        <span class="bg-white text-blue-700 font-bold px-2 rounded">2022</span>
+                    </div>
+                    <div class="flex gap-2 mt-3">
+                        <button class="bg-amber-600 text-white px-3 py-1 rounded hover:bg-amber-500 transition font-bold"><a href="#" target="_blank">LMCP</a></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-blue-300 rounded-lg shadow-md overflow-hidden hover:scale-105 transition transform">
+                <img class="w-full h-48 object-cover" src="/photos/covid.jpg" alt="Project">
+                <div class="p-4">
+                    <h4 class="font-bold text-lg">Liberia Public Health Association (LPHA)</h4>
+                    <p>Data Entry Assistant</p>
+                    <p>Volunteer</p>
+                    <p class="mt-2">Data entry and updating of <abbr class="font-bold" title="Situation Representation">SitRep</abbr> at <abbr class="font-bold" title="Liberia Public Health Association">LPHA</abbr>
+                    This organization worked in close relationship with  <abbr class="font-bold" title="National Public Health Institute of Liberia">NPHIL</abbr> to taggle the COVID-19 outbreak</p>
+                    <div class="flex gap-2 mt-2">
+                        <span class="bg-white text-blue-700 font-bold px-2 rounded">2023</span>
+                    </div>
+                    <div class="flex gap-2 mt-3">
+                        <button class="bg-amber-600 text-white px-3 py-1 rounded hover:bg-amber-500 transition font-bold"><a href="#" target="_blank">LPHA</a></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add other project cards similarly -->
+        </div>
+
+        <!-- Contact Section -->
+    <section id="contact" class="p-6 m-4 rounded-lg shadow-md bg-white">
+        <h3 class="text-2xl font-bold text-center mb-4 text-blue-800">Get In Touch</h3>
+        <div class="grid md:grid-cols-2 gap-6">
+            <form class="flex flex-col gap-4 bg-gray-100 p-4 rounded shadow-md">
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" placeholder="Last - First - Middle" class="p-2 rounded border">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="example@gmail.com" class="p-2 rounded border">
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" class="p-2 rounded border"></textarea>
+                <button class="bg-blue-700 text-white p-2 rounded hover:bg-blue-600 transition">Send</button>
+            </form>
+            <div class="flex flex-col gap-4 p-4 bg-gray-100 rounded shadow-md">
+                <h4 class="text-xl font-bold">Let's Connect</h4>
+                <div class="flex gap-4 justify-start">
+                    <a href="mailto:gglomahwst@gmail.com" class="text-blue-700 hover:text-amber-600"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="#" class="text-blue-700 hover:text-amber-600"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#" class="text-blue-700 hover:text-amber-600"><i class="fab fa-twitter"></i> Twitter</a>
+                </div>
+            </div>
+        </div>
+    </section>
